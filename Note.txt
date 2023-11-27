@@ -1,0 +1,111 @@
+from math import* (this gives us alot of math fuctions)
+
+my_num=5
+print(str(my_num) + "My fav number")# here is if your want to add a string next to the value/ number
+
+print(pow(3, 2)) # pow is used for power to.. 
+print(max(100, 100000))#max is used to show the biggest number same as min
+
+print(round(3.7)) # this is for rounding a number
+
+
+----------------------Calculator------------
+num1 = input("Enter a number: ")
+num2 = input("Enter another number")
+result = int (num1) + int (num2) #int is used to calculate a number without decimals
+
+But to let users input whatever they want we can use 'float'
+result = float (num1) + float (num2)
+print(result)
+
+
+----------------------------Mad Libs Game----------------------
+
+color = input("Enter a color : ")
+plural_noun = input("Enter a plural noun : ")
+anything = input("Enter things u hate : ")
+
+print("Roses are "+ color)
+print( plural_noun + " are blue")
+print("I hate " + anything)
+
+
+
+-----------------------------decimals------------------------
+
+////////////this is the code from binary to decimal\\\\\\\\\\\\
+
+def binary_to_decimal(binary_str):
+    try:
+        decimal_num = int(binary_str, 2)
+        return decimal_num
+    except ValueError:
+        return "Invalid binary input"
+
+# Input a binary number as a string
+binary_input = input("Enter a binary number: ")
+
+# Call the function to convert to decimal and print the result
+decimal_result = binary_to_decimal(binary_input)
+print("Decimal equivalent:", decimal_result)
+
+
+--------------------------------------Hexidecimal--------------------
+///////////from Hex to Dec\\\\\
+def hex_to_decimal(hex_string):
+    try:
+        decimal_num = int(hex_string, 16)
+        return decimal_num
+    except ValueError:
+        return "Invalid hexadecimal input"
+
+# Example usage:
+hexadecimal_input = input("Enter a hexadecimal number: ")
+
+decimal_result = hex_to_decimal(hexadecimal_input)
+if type(decimal_result) == int:
+    print(f"Decimal equivalent: {decimal_result}")
+else:
+    print(decimal_result)
+
+
+
+--------------------Decimal to Hexidecimal--------------
+////////CODE\\\\\\\\\\
+def decimal_to_hex(decimal_num):
+    try:
+        hex_string = hex(decimal_num)
+        return hex_string[2:]  # Remove the "0x" prefix from the hexadecimal string
+    except ValueError:
+        return "Invalid decimal input"
+
+# Example usage:
+decimal_input = input("Enter a decimal number: ")
+
+try:
+    decimal_input = int(decimal_input)
+    hexadecimal_result = decimal_to_hex(decimal_input)
+    print(f"Hexadecimal equivalent: {hexadecimal_result}")
+except ValueError:
+    print("Invalid input. Please enter a valid decimal number.")
+
+
+
+///////////////////////////////Decimal to binary \\\\\\\\\\\\\\\\\\
+
+def decimal_to_binary(decimal_str, bit_length=16):
+    try:
+        decimal_num = int(decimal_str, 10)
+        binary_num = bin(decimal_num)[2:]  # Convert to binary and remove the '0b' prefix
+        # Ensure the binary string is exactly 'bit_length' characters long by adding leading zeros if needed
+        binary_num = binary_num.zfill(bit_length)-------------------------------------------------------|this too !
+        return binary_num
+    except ValueError:
+        return "Invalid Decimal input"
+
+# Input a decimal number as a string
+Decimal_input = input("Enter a Decimal number: ")
+
+# Call the function to convert to a 16-bit binary representation and print the result
+binary_result = decimal_to_binary(Decimal_input, 16) <---------------////this is one of the code---/
+print("16-bit Binary equivalent:", binary_result)
