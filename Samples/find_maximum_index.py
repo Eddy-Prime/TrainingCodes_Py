@@ -26,3 +26,14 @@ print("List after moving maximum to the end:", numbers)
 #/////Explanation/////
 
 
+#find_maximum_index function:
+
+
+#Uses the max function to find the maximum value in the list.
+#Uses the index method to find the index of the maximum value.
+#Returns the index.
+#move_maximum_to_end function:
+
+#Calls find_maximum_index to get the index of the maximum value.
+#Uses pop to remove the maximum value from its current position.
+#Uses append to add the maximum value to the end of the list.
