@@ -1,0 +1,57 @@
+
+////////////LISTS\\\\\\\\\
+
+
+        ////////LIST LOOP\\\\\
+
+letters = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g' ]
+
+#index is the index of the element in the list
+#letter is the element itself
+
+    #enumarate is a function that returns a tuple of the index and the element
+for index, letter in enumerate(letters):
+    print(index, letter)
+
+
+
+#///////////// List 2nd part :D//////////////
+
+    #/////Add & Remove Items/////////
+
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+#add
+letters.append('h')
+
+#insert
+    #insert(index, value)
+    #the insert method inserts a value at the specified index ( meaning that you insert something at a specific location you want to be)
+letters.insert(0, '-')
+
+print(letters)
+
+#remove
+    #remove(value)
+    #the remove method removes a value from the list
+
+    #pop method removes item by index
+
+    #remove method removes item by value
+
+    #del method removes item by index
+
+    #clear method removes all items from the list
+    
+letters.pop(0)
+letters.remove('b')
+print(letters)
+
+
+//////////Find Index\\\\\
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+#This to find the index of a letter in the list
+print(letters.index("f")) # 0
+
