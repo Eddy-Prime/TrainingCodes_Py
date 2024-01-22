@@ -55,3 +55,22 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 #This to find the index of a letter in the list
 print(letters.index("f")) # 0
 
+
+
+
+Create a BankAccount class with the following attributes:
+
+account_holder (a string representing the account holder's name)
+balance (a float representing the account balance)
+
+
+///////
+
+    2 . Implement the following methods for the BankAccount class:
+
+__init__(self, account_holder, initial_balance):
+ Initializes a new bank account with the given account holder's name and initial balance.
+deposit(self, amount): Adds the specified amount to the account balance.
+withdraw(self, amount): Subtracts the specified amount from the account balance. Ensure that the account balance cannot go below zero.
+get_balance(self): Returns the current account balance.
+__str__(self): Returns a string representation of the account, including the account holder's name and the current balance.
